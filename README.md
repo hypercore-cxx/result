@@ -15,7 +15,7 @@ returned with the new value and will test true. If `n` is less than 50 the
 container is returned with an error and will test false.
 
 ```c++
-auto foo = [](size_t n) {
+auto foo = [](int n) {
   Hypercore::Result<int> res;
 
   if (n < 50) {

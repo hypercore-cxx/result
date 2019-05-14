@@ -1,0 +1,23 @@
+{
+  "name": "result",
+  "description": "A container type that holds either an error or value of type T.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:datcxx/cxx-result.git"
+  },
+  "dependencies": {},
+  "license": "MIT",
+  "scripts": {
+    "test": "c++ -std=c++2a test/index.cxx -o test/index && ./test/index",
+    "install": ""
+  },
+  "flags": [
+    "-std=c++2a"
+  ],
+  "files": [
+    "index.hxx"
+  ],
+  "devDependencies": {
+    "git@github.com:heapwolf/cxx-tap": "07821de0"
+  }
+}

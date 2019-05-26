@@ -3,16 +3,21 @@
   "description": "A container type that holds either an error or value of type T.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:datcxx/cxx-result.git"
+    "url": "git@github.com:datcxx/result.git"
   },
   "dependencies": {},
   "license": "MIT",
   "scripts": {
-    "test": "c++ -std=c++2a test/index.cxx -o test/index && ./test/index",
+    "test": [
+      "clang++ -std=c++2a -stdlib=libc++",
+      "test/index.cxx -o test/index && ./test/index"
+    ],
     "install": ""
   },
   "flags": [
-    "-std=c++2a"
+    "-std=c++2a",
+    "-stdlib=libc++",
+    "-O3"
   ],
   "files": [
     "index.hxx"

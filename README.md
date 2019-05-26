@@ -16,7 +16,7 @@ container is returned with an error and will test false.
 
 ```c++
 auto foo = [](int n) {
-  Hypercore::Result<int> res;
+  Hyper::Util::Result<int> res;
 
   if (n < 50) {
     res = n;

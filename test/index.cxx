@@ -3,10 +3,10 @@
 
 #include <iostream>
 
-using Error = Hypercore::Error;
+using Error = Hyper::Util::Error;
 
 template<typename T>
-  using Result = Hypercore::Result<T>;
+  using Result = Hyper::Util::Result<T>;
 
 int main() {
   TAP::Test t;
